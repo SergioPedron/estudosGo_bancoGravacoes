@@ -1,0 +1,14 @@
+Estudos Golang - Introdução ao acesso a banco de dados utilizando GO
+
+Fonte: https://go.dev/doc/tutorial/database-access
+
+Banco:  mySql
+Drive:  go-sql-driver (https://github.com/go-sql-driver/mysql)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Observações:  
+Muita atenção com a nomenclatura ao criar o banco, pois em algumas instalações, é case-sensitive.  Ex.: Select * from Album não funcionará se a tabela for criada como album
+Configuração no mySql é na variável lower_case_table_names=1 que pode ser consultada com SELECT @@version, @@version_compile_os, @@lower_case_table_names.
+O problema é alterar essa variável depois do mySql já ter sido instalado.
+--------------------------------------------------------------------------------------------------------------------------------------
